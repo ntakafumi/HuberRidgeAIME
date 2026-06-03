@@ -1,4 +1,4 @@
-# HuberRidgeAIME Scientific Reports revision reproducibility package
+# HuberRidgeAIME package
 [![DOI](https://zenodo.org/badge/1257880530.svg)](https://doi.org/10.5281/zenodo.20520654)
 
 This package contains the code and generated artifacts for the Scientific Reports revision of:
