@@ -1,0 +1,14 @@
+artifact,type,source_data,generating_function,purpose
+fig_revision_aime_hra_schematic.png,figure,Generated schematic; no third-party image used,fig_schematic_hra_problem,"Reviewer 1: explain AIME problem, outlier/collinearity stress, and HRA mechanism"
+fig_revision_pathology_heatmap_hra_minus_huberaime.png,figure,revision_pathology_results_clean.csv,fig_pathology_heatmap,Reviewer 1/2/4: clarify when HRA differs from HuberAIME under controlled real-data stress
+fig_revision_conditioning_boxplot.png,figure,revision_pathology_results_clean.csv,fig_conditioning_boxplot,Reviewer 1/4: show well-posedness/conditioning benefit of ridge regularization
+fig_revision_metric_discrimination_decoy.png,figure,revision_pathology_results_clean.csv,fig_metric_discrimination,Reviewer 4: demonstrate non-saturating decoy mass metric in addition to Top-K infiltration
+fig_revision_runtime_scaling.png,figure,revision_runtime_scaling_raw.csv,run_runtime_scaling + plotting cell,Reviewer 1: computational cost of proposed method and AIME-family variants
+table_revision_dataset_validity_missingness.tex,table,revision_dataset_audit.csv,build_dataset_audit_table,"Editor: dataset details, validity, missingness, and diagnostic information"
+table_revision_missing_data_comparison.tex,table,revision_missing_data_comparison_raw.csv,run_missing_data_comparison,Editor: missing data handling and comparison
+table_revision_hra_vs_huberaime_pathology.tex,table,revision_pathology_results_clean.csv,build_revision_summaries,Reviewer 1/4: direct comparison with HuberAIME under clean and joint stress conditions
+table_revision_paired_tests_hra_vs_huberaime_joint_high.tex,table,revision_paired_tests_hra_vs_huberaime_joint_high.csv,paired_test_revision,Reviewer 2/4: paired statistical evaluation under aligned high-stress setting
+fig_revision_log_condition_number_boxplot.png,figure,revision_log_conditioning_long.csv,build_log_conditioning_outputs,Reviewer 1/4: show well-posedness benefit of HRA using log-scaled condition-number diagnostics
+fig_revision_log_coef_norm_boxplot.png,figure,revision_log_conditioning_long.csv,build_log_conditioning_outputs,Reviewer 1/4: show coefficient-norm stabilization by HRA using log-scaled diagnostics
+table_revision_log_conditioning_summary.tex,table,revision_log_conditioning_summary.csv,build_log_conditioning_outputs,Main/Supplementary table: publication-friendly log10 conditioning and coefficient norm summary
+table_revision_log_conditioning_hra_vs_huberaime.tex,table,revision_log_conditioning_hra_vs_huberaime.csv,build_log_conditioning_outputs,Reviewer 1/4: paired HRA-vs-HuberAIME comparison on well-posedness and full-vector metrics

@@ -1,0 +1,9 @@
+Stress subset,Metric,HRA mean,HuberAIME mean,HRA--HuberAIME,Median diff.,Direction
+All conditions,log10\_cond\_reg,5.588,10.953,-5.366,-7.150,lower is better
+All conditions,log10\_coef\_l2\_norm,0.371,4.264,-3.893,-0.451,lower is better
+All conditions,bootstrap\_cosine\_flat,0.569,0.313,0.256,0.254,higher is better
+All conditions,noise\_cosine\_flat,0.473,0.278,0.195,0.147,higher is better
+Joint high stress,log10\_cond\_reg,5.757,8.726,-2.970,-0.742,lower is better
+Joint high stress,log10\_coef\_l2\_norm,0.550,1.776,-1.226,-0.430,lower is better
+Joint high stress,bootstrap\_cosine\_flat,0.502,0.284,0.218,0.203,higher is better
+Joint high stress,noise\_cosine\_flat,0.408,0.256,0.152,0.111,higher is better

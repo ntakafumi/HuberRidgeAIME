@@ -1,0 +1,5 @@
+Method,$\log_{10}\kappa(Y^\top W Y + \lambda I)$,$\log_{10}\|A\|_F$,Median IRLS iter.,Mean explain time (s)
+AIME,11.27 $\pm$ 5.60,5.23 $\pm$ 9.34,1.0,0.0663
+HuberAIME,10.95 $\pm$ 5.60,4.26 $\pm$ 7.01,2.0,0.0909
+RidgeAIME,5.59 $\pm$ 1.33,0.37 $\pm$ 0.43,1.0,0.0502
+HuberRidgeAIME,5.59 $\pm$ 1.33,0.37 $\pm$ 0.43,2.0,0.0571

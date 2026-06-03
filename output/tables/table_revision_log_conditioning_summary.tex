@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Log-scaled numerical conditioning and coefficient-norm diagnostics across the controlled real-data pathology experiments. Values are mean $\pm$ standard deviation unless otherwise noted.}
+\label{tab:revision_log_conditioning_summary}
+\begin{tabular}{lllll}
+\toprule
+Method & $\log_{10}\kappa(Y^\top W Y + \lambda I)$ & $\log_{10}\|A\|_F$ & Median IRLS iter. & Mean explain time (s) \\
+\midrule
+AIME & 11.27 $\pm$ 5.60 & 5.23 $\pm$ 9.34 & 1.0 & 0.0663 \\
+HuberAIME & 10.95 $\pm$ 5.60 & 4.26 $\pm$ 7.01 & 2.0 & 0.0909 \\
+RidgeAIME & 5.59 $\pm$ 1.33 & 0.37 $\pm$ 0.43 & 1.0 & 0.0502 \\
+HuberRidgeAIME & 5.59 $\pm$ 1.33 & 0.37 $\pm$ 0.43 & 2.0 & 0.0571 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llllllll}
+\toprule
+Condition & Method & Bootstrap Spearman & Noise cosine & Decoy resistance mass & Median $\kappa_{reg}$ & Coef. norm & Runtime (s) \\
+\midrule
+out0.00_clone0.00 & HuberAIME & 0.645 $\pm$ 0.231 & 0.287 $\pm$ 0.327 & 0.905 $\pm$ 0.091 & 8.97e+14 & 206051805903464028569226270736384.000 $\pm$ 1070676590447895599400777718693888.000 & 0.121 $\pm$ 0.168 \\
+out0.00_clone0.00 & HuberRidgeAIME & 0.718 $\pm$ 0.125 & 0.432 $\pm$ 0.266 & 0.889 $\pm$ 0.100 & 9.25e+04 & 1.789 $\pm$ 1.652 & 0.044 $\pm$ 0.062 \\
+out0.10_clone0.50 & HuberAIME & 0.674 $\pm$ 0.090 & 0.256 $\pm$ 0.212 & 0.982 $\pm$ 0.015 & 7.00e+05 & 11814.212 $\pm$ 32736.338 & 0.069 $\pm$ 0.100 \\
+out0.10_clone0.50 & HuberRidgeAIME & 0.583 $\pm$ 0.071 & 0.408 $\pm$ 0.138 & 0.972 $\pm$ 0.020 & 1.87e+05 & 4.318 $\pm$ 2.364 & 0.065 $\pm$ 0.092 \\
+\bottomrule
+\end{tabular}
+
+\caption{HuberAIME versus HuberRidgeAIME on clean and joint outlier+collinearity real-data stress conditions. The table reports full-vector metrics added to avoid Top-K saturation/floor effects.}
+\label{tab:revision_hra_huberaime_pathology}
+\end{table}

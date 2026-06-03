@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Dataset & $n$ & $d$ & Classes & Missing cells & $\kappa(X^\top X)$ & Eff. rank / $d$ & Max |corr| & Frac |corr|>0.90 & Robust outlier cell rate \\
+\midrule
+breast_cancer & 569 & 30 & 2 & 0 & 9.98e+04 & 0.559 & 0.998 & 0.0483 & 0.0298 \\
+credit_approval & 690 & 42 & 2 & 67 & 2.96e+27 & 0.802 & 1 & 0.0105 & 0.0172 \\
+har & 10299 & 561 & 6 & 0 & 2.93e+30 & 0.367 & 1 & 0.0515 & 0.234 \\
+\bottomrule
+\end{tabular}
+
+\caption{Dataset validity, missingness, outlier diagnostics, and multicollinearity diagnostics. The condition number and correlation summaries are computed after numeric encoding and standardization.}
+\label{tab:revision_dataset_audit}
+\end{table}

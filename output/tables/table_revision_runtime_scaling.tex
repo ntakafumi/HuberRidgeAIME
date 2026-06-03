@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{lllll}
+\toprule
+Method & Mean runtime (s) & Median runtime (s) & Max runtime (s) & Mean IRLS iterations \\
+\midrule
+AIME & 0.007 & 0.003 & 0.023 & 1.000 \\
+HuberAIME & 0.015 & 0.006 & 0.091 & 6.380 \\
+HuberRidgeAIME & 0.015 & 0.006 & 0.092 & 6.380 \\
+RidgeAIME & 0.007 & 0.003 & 0.023 & 1.000 \\
+\bottomrule
+\end{tabular}
+
+\caption{Runtime scaling of AIME-family methods on controlled synthetic matrices. Huber variants require IRLS iterations, whereas ridge adds negligible overhead relative to solving the weighted normal equations.}
+\label{tab:revision_runtime_scaling}
+\end{table}

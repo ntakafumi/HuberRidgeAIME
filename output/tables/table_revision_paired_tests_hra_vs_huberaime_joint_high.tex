@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\begin{tabular}{llrllllll}
+\toprule
+metric & better_direction_for_target & n_pairs & mean_target & mean_baseline & mean_better_diff & HL_better_diff & p_raw & p_holm \\
+\midrule
+bootstrap_spearman_global & greater & 27 & 0.5828 & 0.6737 & -0.09094 & -0.09022 & 1.0000 & 1.0000 \\
+bootstrap_cosine_flat & greater & 27 & 0.5023 & 0.2843 & 0.218 & 0.2183 & $<10^{-4}$ & 0.0003 \\
+noise_spearman_global & greater & 27 & 0.6263 & 0.5825 & 0.04383 & 0.04544 & 0.0016 & 0.0065 \\
+noise_cosine_flat & greater & 27 & 0.4083 & 0.2565 & 0.1518 & 0.1617 & $<10^{-4}$ & $<10^{-4}$ \\
+decoy_decoy_resistance_mass & greater & 27 & 0.9722 & 0.9821 & -0.009889 & -0.00929 & 1.0000 & 1.0000 \\
+decoy_decoy_mass_ratio & less & 27 & 0.02783 & 0.01794 & -0.009889 & -0.00929 & 1.0000 & 1.0000 \\
+cond_reg_median & less & 27 & 3.369e+06 & 1.192e+16 & 1.192e+16 & 2.156e+12 & $<10^{-4}$ & $<10^{-4}$ \\
+coef_l2_norm_mean & less & 27 & 4.318 & 1.181e+04 & 1.181e+04 & 307.2 & $<10^{-4}$ & $<10^{-4}$ \\
+\bottomrule
+\end{tabular}
+
+\caption{Paired Wilcoxon tests comparing HuberRidgeAIME with HuberAIME. For metrics marked 'less', the reported difference is baseline minus HRA, so positive values favor HRA.}
+\label{tab:revision_paired_hra_huberaime_joint_high}
+\end{table}
