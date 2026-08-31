@@ -12,7 +12,7 @@ Only the following two notebooks are current for the revised manuscript:
 
 ```text
 notebooks/HuberRidgeAIME_Main_Reproducibility_CORRECTED.ipynb
-notebooks/HuberRidgeAIME_Reviewer5_FullyCorrected_Experiments_FINAL.ipynb
+notebooks/HuberRidgeAIME_Additional_Robustness_Faithfulness_Experiments.ipynb
 ```
 
 All AIME-family estimators in these notebooks use the inverse-map formulation in the manuscript:
@@ -52,9 +52,9 @@ Its default output directory is:
 The full-run validation gates require 108 clean-benchmark rows, 972 controlled-stress rows, 72 missing-data rows, and 144 runtime rows.
 They also require passing inverse-map unit tests, no experiment errors, `X ~= Y A^T` in every applicable row, all four AIME-family methods in the stress experiment, finite key metrics, and a nonempty condition-cluster confidence-interval table.
 
-### Reviewer 5 notebook
+### Additional validation notebook
 
-`HuberRidgeAIME_Reviewer5_FullyCorrected_Experiments_FINAL.ipynb` is the source for the dedicated Reviewer 5 response experiments.
+`HuberRidgeAIME_Additional_Robustness_Faithfulness_Experiments.ipynb` is the source for additional robustness, faithfulness, sensitivity, and baseline validation experiments.
 It produces:
 
 - fixed-black-box contamination and end-to-end HRA-versus-RidgeAIME comparisons;
@@ -69,7 +69,7 @@ It produces:
 Its configured full-run output directory is:
 
 ```text
-./output/revision-2/
+./output/additional_validation/
 ```
 
 The full-run validation gates require 540 fixed-protocol rows, 324 end-to-end rows, 900 synthetic rows, 864 sensitivity rows, and 72 baseline rows.
@@ -77,22 +77,14 @@ They also require the correct inverse-map orientation, no experiment errors, fin
 
 The two notebooks contain related experiments but do not use identical protocols for every end-to-end result.
 Use the main notebook for the manuscript's main real-data tables and figures.
-Use the Reviewer 5 notebook for the focused Reviewer 5 experiments listed above.
+Use the additional validation notebook for the focused experiments listed above.
 Do not mix similarly named end-to-end results across the two protocols.
 
-## Legacy materials
+## Superseded materials
 
-The following notebook is retained only for historical traceability:
-
-```text
-notebooks/HuberRidgeAIME.ipynb
-```
-
-The pre-correction files directly under the original `output/` directory are also legacy artifacts.
-They must not be used for current-manuscript numerical results, tables, figures, or claims because the earlier main real-data implementation did not consistently use `X \approx Y A^T`.
-
-For the corrected GitHub and Zenodo release, either omit these legacy materials or move them under `legacy/` with a notice stating that they are superseded.
-Do not delete the earlier Zenodo version: Zenodo versions are immutable records and should remain available as the historical release.
+The pre-correction notebook and its generated outputs are intentionally excluded from this release because the earlier main real-data implementation did not consistently use `X \approx Y A^T`.
+They must not be used for current-manuscript numerical results, tables, figures, or claims.
+The earlier Zenodo version remains available as the immutable historical release.
 
 ## Installation
 
@@ -115,21 +107,20 @@ python -m pip install -r requirements.txt
 ## Full execution
 
 Both output paths are relative to the process working directory.
-To reproduce the directory layout already included in this package, start execution from `notebooks/`:
+Run the following commands from the repository root to reproduce the included directory layout:
 
 ```bash
-cd notebooks
 jupyter nbconvert --execute --to notebook --inplace \
-  HuberRidgeAIME_Main_Reproducibility_CORRECTED.ipynb
+  notebooks/HuberRidgeAIME_Main_Reproducibility_CORRECTED.ipynb
 jupyter nbconvert --execute --to notebook --inplace \
-  HuberRidgeAIME_Reviewer5_FullyCorrected_Experiments_FINAL.ipynb
+  notebooks/HuberRidgeAIME_Additional_Robustness_Faithfulness_Experiments.ipynb
 ```
 
 This produces:
 
 ```text
-notebooks/output/main_repro_corrected/
-notebooks/output/revision-2/
+output/main_repro_corrected/
+output/additional_validation/
 ```
 
 A fresh full run requires network access to download the Australian Credit data.
@@ -140,10 +131,10 @@ The notebooks are configured with full-run defaults and forced recomputation.
 Before creating a release:
 
 1. Confirm that both notebooks complete from top to bottom with the full-run settings.
-2. Confirm that `main_corrected_validation_report.json` and `r5_final_validation_report.json` contain an empty `failed` array.
+2. Confirm that `main_corrected_validation_report.json` and `additional_validation_validation_report.json` contain an empty `failed` array.
 3. Verify the files and SHA-256 values listed in both artifact manifests.
 4. Include the source notebooks, preferably the executed notebooks, both output ZIP archives, `README.md`, `environment.yml`, and `requirements.txt`.
-5. Check that the manuscript and supplementary material use main-notebook results for the main protocol and Reviewer 5-notebook results only for their stated dedicated experiments.
+5. Check that the manuscript and supplementary material use main-notebook results for the main protocol and additional-validation results only for their stated experimental protocols.
 
 ## GitHub release and Zenodo versioning
 
@@ -161,4 +152,3 @@ For the corrected release:
 8. After Zenodo displays the new DOI, update the README badge and add or update `CITATION.cff` in a follow-up release if necessary.
 
 Each Zenodo version receives its own version-specific DOI, while the concept DOI resolves to the latest version in the record series.
-
