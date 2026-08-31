@@ -125,30 +125,3 @@ output/additional_validation/
 
 A fresh full run requires network access to download the Australian Credit data.
 The notebooks are configured with full-run defaults and forced recomputation.
-
-## Release validation
-
-Before creating a release:
-
-1. Confirm that both notebooks complete from top to bottom with the full-run settings.
-2. Confirm that `main_corrected_validation_report.json` and `additional_validation_validation_report.json` contain an empty `failed` array.
-3. Verify the files and SHA-256 values listed in both artifact manifests.
-4. Include the source notebooks, preferably the executed notebooks, both output ZIP archives, `README.md`, `environment.yml`, and `requirements.txt`.
-5. Check that the manuscript and supplementary material use main-notebook results for the main protocol and additional-validation results only for their stated experimental protocols.
-
-## GitHub release and Zenodo versioning
-
-The DOI badge above points to the existing Zenodo record and must not be described as the corrected release until the new version has been archived and checked.
-
-For the corrected release:
-
-1. Update the GitHub `main` branch with the two current notebooks, their validated outputs, and the three repository files.
-2. Create a version tag such as `v2.0.0-corrected`.
-3. Create a GitHub Release from that tag. A tag alone is not the GitHub Release archived by the Zenodo integration.
-4. Confirm in Zenodo's GitHub settings that `ntakafumi/HuberRidgeAIME` is enabled before publishing the GitHub Release.
-5. Open the newly archived Zenodo version and verify its files, title, authors, ORCID identifiers, license, description, keywords, and version.
-6. Use the new version-specific DOI in the revised manuscript because it identifies the exact archived package used for the submission.
-7. Use the concept DOI when referring to the evolving software project across versions.
-8. After Zenodo displays the new DOI, update the README badge and add or update `CITATION.cff` in a follow-up release if necessary.
-
-Each Zenodo version receives its own version-specific DOI, while the concept DOI resolves to the latest version in the record series.
