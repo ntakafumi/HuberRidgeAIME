@@ -1,6 +1,6 @@
 # HuberRidgeAIME
 
-[![DOI](https://zenodo.org/badge/1257880530.svg)](https://doi.org/10.5281/zenodo.20520654)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22193615.svg)](https://doi.org/10.5281/zenodo.22193615)
 
 This repository contains the reproducibility materials for:
 
