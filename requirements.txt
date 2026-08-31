@@ -1,5 +1,5 @@
-# Versions recorded by the successful full corrected runs on 2026-08-31.
-numpy==2.5.1
+# Common release environment for all three corrected notebooks.
+numpy==2.4.2
 pandas==2.3.3
 scipy==1.16.2
 scikit-learn==1.9.0
@@ -8,8 +8,9 @@ lightgbm==4.6.0
 
 # additional validation baseline comparison.
 lime==0.2.0.1
-
-# TreeSHAP uses LightGBM native pred_contrib=True; the shap package is not required.
+shap==0.48.0
+tqdm==4.67.1
+requests==2.32.5
 
 # Notebook execution and validation.
 jupyter
