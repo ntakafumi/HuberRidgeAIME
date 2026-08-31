@@ -1,7 +1,0 @@
-pipeline_version,item,clarification
-r5_final_inverse_map_complete_2026-08-31,Coefficient norm,"log10||A||F is a regularization diagnostic, not a quality score; faithfulness is evaluated separately."
-r5_final_inverse_map_complete_2026-08-31,Identity notation,Use I_C whenever the dimension is explicit; I is only shorthand for the C x C identity.
-r5_final_inverse_map_complete_2026-08-31,IRLS iteration summaries,The real-data table reports the median across condition cells; the runtime table reports the mean across matrix-size and repeat runs.
-r5_final_inverse_map_complete_2026-08-31,Moore–Penrose versus ridge,pinv reciprocates nonzero singular values; ridge continuously damps all directions and makes Y^T W Y + lambda I_C strictly positive definite.
-r5_final_inverse_map_complete_2026-08-31,Truncated SVD versus ridge,truncated SVD applies a hard cutoff; ridge uses the continuous filter s/(s^2+lambda).
-r5_final_inverse_map_complete_2026-08-31,Huber threshold,"delta is applied to row RMS input-space residuals, ||x_i-Ay_i||_2/sqrt(d), to permit cross-dataset comparison."
