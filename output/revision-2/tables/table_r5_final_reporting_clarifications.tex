@@ -1,0 +1,16 @@
+\begin{table}[t]
+\caption{Clarifications for interpretation, notation, and apparently different iteration summaries.}
+\label{tab:r5_final_reporting_clarifications}
+\begin{tabular}{ll}
+\toprule
+item & clarification \\
+\midrule
+Coefficient norm & log10||A||F is a regularization diagnostic, not a quality score; faithfulness is evaluated separately. \\
+Identity notation & Use I_C whenever the dimension is explicit; I is only shorthand for the C x C identity. \\
+IRLS iteration summaries & The real-data table reports the median across condition cells; the runtime table reports the mean across matrix-size and repeat runs. \\
+Moore–Penrose versus ridge & pinv reciprocates nonzero singular values; ridge continuously damps all directions and makes Y^T W Y + lambda I_C strictly positive definite. \\
+Truncated SVD versus ridge & truncated SVD applies a hard cutoff; ridge uses the continuous filter s/(s^2+lambda). \\
+Huber threshold & delta is applied to row RMS input-space residuals, ||x_i-Ay_i||_2/sqrt(d), to permit cross-dataset comparison. \\
+\bottomrule
+\end{tabular}
+\end{table}

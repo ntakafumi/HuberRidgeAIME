@@ -1,0 +1,49 @@
+{
+  "pipeline_version": "main_corrected_inverse_map_2026-08-31_v2",
+  "seed": 42,
+  "quick_test": false,
+  "force_recompute": true,
+  "datasets": [
+    "breast_cancer",
+    "credit_approval",
+    "har"
+  ],
+  "learners": [
+    "lgbm",
+    "svm",
+    "mlp"
+  ],
+  "max_n_per_dataset": {
+    "breast_cancer": null,
+    "credit_approval": null,
+    "har": 3000
+  },
+  "default_ridge_lambda": 0.01,
+  "default_huber_delta": 1.0,
+  "residual_scale_mode": "rms",
+  "clean_repeats": 3,
+  "stress_repeats": 3,
+  "stress_outlier_levels": [
+    0.0,
+    0.05,
+    0.1
+  ],
+  "stress_clone_fractions": [
+    0.0,
+    0.25,
+    0.5
+  ],
+  "missing_repeats": 3,
+  "runtime_n_values": [
+    500,
+    1000,
+    2000,
+    4000
+  ],
+  "runtime_d_values": [
+    20,
+    100,
+    300
+  ],
+  "runtime_repeats": 3
+}

@@ -1,0 +1,36 @@
+{
+  "pipeline_version": "main_corrected_inverse_map_2026-08-31_v2",
+  "quick_test": false,
+  "expected_rows": {
+    "clean": 108,
+    "stress": 972,
+    "missing": 72,
+    "runtime": 144
+  },
+  "observed_rows": {
+    "clean": 108,
+    "stress": 972,
+    "missing": 72,
+    "runtime": 144
+  },
+  "checks": {
+    "unit_tests_pass": true,
+    "dataset_audit_has_expected_datasets": true,
+    "clean_expected_rows": true,
+    "stress_expected_rows": true,
+    "runtime_expected_rows": true,
+    "missing_expected_rows": true,
+    "clean_no_errors": true,
+    "clean_inverse_orientation": true,
+    "stress_no_errors": true,
+    "stress_inverse_orientation": true,
+    "missing_no_errors": true,
+    "missing_inverse_orientation": true,
+    "runtime_no_errors": true,
+    "runtime_inverse_orientation": true,
+    "stress_has_all_methods": true,
+    "pairwise_ci_nonempty": true,
+    "stress_key_metrics_finite": true
+  },
+  "failed": []
+}

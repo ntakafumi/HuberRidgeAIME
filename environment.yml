@@ -1,16 +1,19 @@
-name: hra-scireports-revision
+name: hra-corrected-2026
 channels:
   - conda-forge
 dependencies:
-  - python>=3.10
-  - numpy
-  - pandas
-  - scipy
-  - scikit-learn
-  - matplotlib
+  - python=3.13.2
+  - pip
+  - numpy=2.5.1
+  - pandas=2.3.3
+  - scipy=1.16.2
+  - scikit-learn=1.9.0
+  - matplotlib=3.9.2
   - jupyter
   - nbformat
   - nbconvert
-  - pip
+  - ipykernel
   - pip:
-      - lightgbm
+      - lightgbm==4.6.0
+      - lime==0.2.0.1
+

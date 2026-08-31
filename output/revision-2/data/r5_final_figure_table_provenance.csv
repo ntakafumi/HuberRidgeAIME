@@ -1,0 +1,9 @@
+pipeline_version,artifact,reviewer_points,source
+r5_final_inverse_map_complete_2026-08-31,table_r5_final_hra_vs_ridge_cluster_ci.tex,"1,2,4,7",r5_final_hra_vs_ridge_fixed_black_box_raw.csv; r5_final_hra_vs_ridge_end_to_end_raw.csv
+r5_final_inverse_map_complete_2026-08-31,table_r5_final_hra_weight_diagnostics.tex,1,real-data HRA-vs-Ridge raw files
+r5_final_inverse_map_complete_2026-08-31,table_r5_final_synthetic_ground_truth_ci.tex,"2,3,7",r5_final_synthetic_ground_truth_raw.csv
+r5_final_inverse_map_complete_2026-08-31,table_r5_final_norm_is_not_quality.tex,"2,3",r5_final_synthetic_ground_truth_raw.csv
+r5_final_inverse_map_complete_2026-08-31,table_r5_final_lambda_delta_sensitivity.tex,"4,5",r5_final_lambda_delta_sensitivity_raw.csv
+r5_final_inverse_map_complete_2026-08-31,table_r5_final_lime_shap_stress*.tex,6,r5_final_lime_shap_stress_raw.csv
+r5_final_inverse_map_complete_2026-08-31,table_r5_final_dataset_diagnostics.tex,minor dataset points,public dataset loaders
+r5_final_inverse_map_complete_2026-08-31,fig_r5_final_spectral_*.png,minor pseudoinverse/SVD/ridge,r5_final_spectral_filter_diagnostics.csv

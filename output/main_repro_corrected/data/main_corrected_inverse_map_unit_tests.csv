@@ -1,0 +1,2 @@
+pipeline_version,aime_max_abs_error_vs_pinv,hra_max_abs_error_vs_ridge_at_large_delta,mean_weight_outlier_rows,mean_weight_nonoutlier_rows,aime_orientation_pass,large_delta_equivalence_pass,outlier_downweight_pass
+main_corrected_inverse_map_2026-08-31_v2,4.3298697960381105e-15,0.0,0.31059521767091297,1.0,True,True,True

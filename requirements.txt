@@ -1,9 +1,18 @@
-numpy
-pandas
-scipy
-scikit-learn
-matplotlib
-lightgbm
+# Versions recorded by the successful full corrected runs on 2026-08-31.
+numpy==2.5.1
+pandas==2.3.3
+scipy==1.16.2
+scikit-learn==1.9.0
+matplotlib==3.9.2
+lightgbm==4.6.0
+
+# Reviewer 5 baseline comparison.
+lime==0.2.0.1
+
+# TreeSHAP uses LightGBM native pred_contrib=True; the shap package is not required.
+
+# Notebook execution and validation.
 jupyter
 nbformat
 nbconvert
+ipykernel

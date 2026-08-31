@@ -1,0 +1,10 @@
+pipeline_version,dataset,learner,submitted_ridge_lambda,submitted_huber_delta,residual_definition,selection_rule
+r5_final_inverse_map_complete_2026-08-31,breast_cancer,lgbm,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,breast_cancer,svm,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,breast_cancer,mlp,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,credit_approval,lgbm,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,credit_approval,svm,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,credit_approval,mlp,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,har,lgbm,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,har,svm,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
+r5_final_inverse_map_complete_2026-08-31,har,mlp,0.01,1.0,row RMS residual = L2 residual / sqrt(d),fixed globally before this sensitivity analysis
