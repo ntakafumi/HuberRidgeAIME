@@ -97,7 +97,7 @@ It produces:
 Its configured full-run output directory is:
 
 ```text
-./output/additional_validation/
+./output/additional_validation_manuscript_figures/
 ```
 
 The full-run validation gates require 540 fixed-protocol rows, 324 end-to-end rows, 900 synthetic rows, 864 sensitivity rows, and 72 baseline rows.
